@@ -1,26 +1,27 @@
 media:
-  input: images
-  output: images
+input: images
+output: images
 
 content:
-  - name: products
+
+* name: products
     label: Products
     type: file
     path: products.json
     format: json
     fields:
-      - name: name
+    * name: name
         label: Product Name
         type: string
-      - name: price
+    * name: price
         label: Price (PKR)
         type: number
-      - name: description
+    * name: description
         label: Description
         type: text
-      - name: image
+    * name: image
         label: Product Image
         type: string
-      - name: category
+    * name: category
         label: Category
         type: string
