@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Eucalyptus Mint",
+    "price": 2000,
+    "description": "Fresh eucalyptus and mint-inspired scented candle.",
+    "image": "images/eucalyptus-mint.jpeg",
+    "category": "Candles"
+  },
+  {
+    "name": "Rose Blush",
+    "price": 2000,
+    "description": "A soft, floral-inspired candle made for cozy moments.",
+    "image": "images/rose-blush.jpeg",
+    "category": "Candles"
+  },
+  {
+    "name": "Golden Hour",
+    "price": 2000,
+    "description": "A warm golden-toned scented candle for slow evenings.",
+    "image": "images/golden-hour.jpeg",
+    "category": "Candles"
+  },
+  {
+    "name": "Lavender Haze",
+    "price": 2000,
+    "description": "A calming lavender-inspired scented candle.",
+    "image": "images/lavender-haze.jpeg",
+    "category": "Candles"
+  },
+  {
+    "name": "Amber Blossom",
+    "price": 2000,
+    "description": "A warm amber-toned candle with an earthy mood.",
+    "image": "images/amber-blossom.jpeg",
+    "category": "Candles"
+  },
+  {
+    "name": "Golden Blossom",
+    "price": 2000,
+    "description": "A honey-gold botanical-inspired candle.",
+    "image": "images/golden-blossom.jpeg",
+    "category": "Candles"
+  },
+  {
+    "name": "Honeyed Spice",
+    "price": 2000,
+    "description": "A warm, spiced candle with a honey-inspired mood.",
+    "image": "images/honeyed-spice.jpeg",
+    "category": "Candles"
+  },
+  {
+    "name": "Wild Berry",
+    "price": 2000,
+    "description": "A bold berry-inspired scented candle.",
+    "image": "images/wild-berry.jpeg",
+    "category": "Candles"
+  }
+]
