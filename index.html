@@ -171,4 +171,45 @@ footer{background:var(--red);color:white;padding:38px 0;margin-top:25px}
  <div><strong>Khayal Essentials</strong><br>Made with خیال</div>
  <div>Instagram: <a target="_blank" href="https://www.instagram.com/khayal.essentials/">@khayal.essentials</a><br>WhatsApp: <a target="_blank" href="https://wa.me/923712650169">+92 371 2650169</a></div>
 </div></footer>
+ <script>
+fetch('./products.json')
+  .then(function(response) {
+    if (!response.ok) throw new Error('Products not found');
+    return response.json();
+  })
+  .then(function(products) {
+    var container = document.querySelector('.products');
+    if (!container || !Array.isArray(products)) return;
+
+    container.innerHTML = products.map(function(product) {
+      var name = String(product.name || '');
+      var price = Number(product.price || 0);
+      var description = String(product.description || '');
+      var image = String(product.image || '');
+      var category = String(product.category || 'HANDMADE');
+      var orderText = encodeURIComponent(
+        "Hi Khayal Essentials, I'd like to order " + name + "."
+      );
+      var whatsapp = 'https://wa.me/923712650169?text=' + orderText;
+
+      return `
+        <article class="product">
+          <img src="${image}" alt="${name}">
+          <div class="product-info">
+            <span class="tag">${category}</span>
+            <h3>${name}</h3>
+            <p>${description}</p>
+            <div class="bottom">
+              <strong>PKR ${price.toLocaleString('en-PK')}</strong>
+              <a href="${whatsapp}" target="_blank">Order on WhatsApp</a>
+            </div>
+          </div>
+        </article>
+      `;
+    }).join('');
+  })
+  .catch(function(error) {
+    console.error('Products could not load:', error);
+  });
+</script> 
 </body></html>
